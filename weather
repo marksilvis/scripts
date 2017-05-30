@@ -1,0 +1,11 @@
+#!/bin/bash
+
+wttr=http://wttr.in/
+loc=Pittsburgh
+
+if [[ -z $1 ]]; then
+   curl $wttr$loc
+else
+    curl $wttr$1
+fi
+
